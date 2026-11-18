@@ -6,6 +6,7 @@ assets/*
 !assets/system.css
 !assets/system.js
 !assets/img/
+!assets/media/
 assets/img/credits.json
 !assets/ui/
 assets/ui/*
@@ -23,3 +24,4 @@ assets/moments/*
 !assets/moments/word-highlight/
 assets/**/demo.html
 assets/motion/_hover-test.html
+video e foto/

@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Olio Bosco: olio nuovo dei colli pesaresi, raccolta 2026</title>
-<meta name="description" content="L'olio d'oliva di Raffaele Bosco, raccolto nel 2026 nelle campagne interne pesaresi. Si ordina per telefono o WhatsApp al +39 328 643 1359.">
+<title>Olio Bosco: olio extravergine EOS dalla Daunia, raccolta 2026</title>
+<meta name="description" content="Olio extravergine d'oliva EOS, monocultivar Peranzana della Daunia, estratto a freddo e filtrato. Bag in box, lattina e bottiglia: ordini al +39 328 643 1359.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="it_IT">
 <meta property="og:site_name" content="Olio Bosco">
 <meta property="og:url" content="https://olio-bosco.github.io/">
-<meta property="og:title" content="Olio Bosco: olio nuovo dei colli pesaresi">
-<meta property="og:description" content="Raccolta 2026 dalle campagne interne pesaresi. Si ordina per telefono o WhatsApp.">
+<meta property="og:title" content="Olio Bosco: extravergine Peranzana della Daunia">
+<meta property="og:description" content="Olio EOS, raccolta 2026, estratto a freddo e filtrato. Si ordina per telefono o WhatsApp.">
 <meta property="og:image" content="https://olio-bosco.github.io/share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="favicon.ico" sizes="48x48">
@@ -25,7 +25,7 @@
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "Olio Bosco",
-  "description": "Olio d'oliva della raccolta 2026 dalle campagne interne pesaresi, venduto da Raffaele Bosco.",
+  "description": "Olio extravergine d'oliva EOS, monocultivar Peranzana della Daunia, estratto a freddo e filtrato, raccolta 2026. Venduto da Raffaele Bosco.",
   "url": "https://olio-bosco.github.io/",
   "image": "https://olio-bosco.github.io/share.jpg",
   "telephone": "+393286431359",
@@ -61,26 +61,27 @@
 <link rel="modulepreload" href="assets/moments/lib.js">
 <link rel="modulepreload" href="assets/moments/word-highlight/moment.js">
 <style>
-  /* the pair and the trio: photographs on the column lines, filling what the heading leaves */
+  /* the pair and the trio: photographs and films on the column lines, filling what the heading leaves */
   .pics { align-items: stretch; }
   .pics > .frame { height: 100%; }
   .menu-card .panel { --p-h: 200px; }
   .nav__logo .logo-img { height: 1.4em; width: auto; }
+  video.frame__img { background: var(--surface); }
+  /* the EOS film shows whole (its last frame is the formats card), on the panel colour */
+  #formati video.frame__img { object-fit: contain; }
   @media (max-width: 1023px) {
     .pics { display: flex; flex-wrap: wrap; gap: var(--s-3); }
-    .pics > .frame { flex: 1 1 calc(50% - var(--s-3)); min-width: 0; height: auto; aspect-ratio: 4 / 3; }
+    .pics > .frame { flex: 1 1 calc(50% - var(--s-3)); min-width: 0; height: auto; aspect-ratio: 4 / 5; }
     .pics > .frame:first-child:nth-last-child(3) { flex-basis: 100%; }
   }
-  @media (max-width: 639px) {
-    #olio .pics > .frame { flex-basis: 100%; }
-  }
+  @media (min-width: 640px) and (max-width: 1023px) { #frantoio, #formati { --h: 2 } .footer .footer__col { grid-column: auto / span 4; } }
 </style>
 </head>
 <body>
-<!-- type: product (olio d'oliva, venduto dal produttore)
-     deal: hero photo (film dealt first, redealt: no film), nav-split (nav-mega redealt: no feature pages), close-photo,
-     footer-dark, rhythm dark-band, buttons pill, mark arc; palette from the brief (Italian, olive oil: linen
-     ground, olive accent) through start.mjs brand; type fraunces (a food brand's warm serif)
+<!-- type: product (olio extravergine EOS, rivenduto da Raffaele Bosco)
+     deal: hero split (the client's photographs are portrait phone shots, too small for the dealt full-bleed photo hero),
+     nav-split, close-type (close-photo dealt; its photograph removed at the client's ask), footer-dark, rhythm dark-band,
+     buttons pill, logo the client's bottle; palette from the brief through start.mjs brand; type fraunces
      moments: word-highlight in #bosco -->
 <header class="nav nav--split">
   <div class="wrap nav__bar">
@@ -91,26 +92,26 @@
         <div class="nav__menu">
           <div class="wrap grid">
             <a class="menu-card span-4" href="#olio">
-              <div class="panel"><img class="frame__img" src="assets/img/photo-f3817080-500.webp" alt="Ampolla di vetro piena d'olio dorato" data-source="stand-in" data-subject="olio in ampolla"></div>
-              <span class="t-card">Olio nuovo 2026</span>
-              <span class="t-small muted">Prezzo e formati su richiesta</span>
+              <div class="panel"><img class="frame__img" src="assets/media/bag-in-box-500.webp" alt="Confezioni bag in box di olio EOS impilate" data-source="client" data-subject="bag in box EOS"></div>
+              <span class="t-card">Olio EOS 2026</span>
+              <span class="t-small muted">Monocultivar Peranzana della Daunia</span>
             </a>
-            <a class="menu-card span-4" href="#raccolta">
-              <div class="panel"><img class="frame__img" src="assets/img/photo-f7915537-500.webp" alt="Cassette piene di olive appena raccolte" data-source="stand-in" data-subject="cassette di olive"></div>
-              <span class="t-card">La raccolta</span>
-              <span class="t-small muted">Olive delle campagne interne pesaresi</span>
+            <a class="menu-card span-4" href="#frantoio">
+              <div class="panel"><img class="frame__img" src="assets/media/olio-estrazione.webp" alt="Olio verde appena estratto che scende in una vasca d'acciaio" data-source="client" data-subject="olio al frantoio"></div>
+              <span class="t-card">Il frantoio</span>
+              <span class="t-small muted">Estratto a freddo e filtrato</span>
             </a>
-            <a class="menu-card span-4" href="#zona">
-              <div class="panel"><img class="frame__img" src="assets/img/photo-f73810725-500.webp" alt="Casolare tra colline arate all'alba" data-source="stand-in" data-subject="colline marchigiane"></div>
-              <span class="t-card">Dove si vende</span>
-              <span class="t-small muted">Pesaro e i paesi vicini</span>
+            <a class="menu-card span-4" href="#formati">
+              <div class="panel"><img class="frame__img" src="assets/media/eos-video.webp" alt="Cartolina con i formati dell'olio EOS" style="object-position: 50% 70%" data-source="client" data-subject="formati EOS"></div>
+              <span class="t-card">Formati</span>
+              <span class="t-small muted">Bag in box, lattina, bottiglia</span>
             </a>
           </div>
         </div>
       </div>
-      <div class="nav__item"><a class="nav__link" href="#raccolta">Raccolta</a></div>
-      <div class="nav__item"><a class="nav__link" href="#bosco">Produttore</a></div>
-      <div class="nav__item"><a class="nav__link" href="#zona">Zona</a></div>
+      <div class="nav__item"><a class="nav__link" href="#frantoio">Frantoio</a></div>
+      <div class="nav__item"><a class="nav__link" href="#formati">Formati</a></div>
+      <div class="nav__item"><a class="nav__link" href="#bosco">Chi vende</a></div>
     </nav>
     <a class="nav__logo" href="#top"><img class="logo-img" src="assets/img/logo-bottiglia.png" alt="" width="142" height="160">Olio Bosco</a>
     <div class="nav__actions">
@@ -123,19 +124,18 @@
 </header>
 
 <main id="top">
-  <section class="hero hero--photo" data-enter data-calm="left" aria-labelledby="hero-h">
-    <picture class="hero__bg" data-phone-fill style="--ly-pos: 60% 55%; --ly-pos-phone: 50% 50%">
-      <source media="(max-width: 639px)" srcset="assets/img/photo-f73623006-780x975.webp 780w" sizes="100vw">
-      <img src="assets/img/photo-f73623006-1280.webp" srcset="assets/img/photo-f73623006-500.webp 500w, assets/img/photo-f73623006-960.webp 960w, assets/img/photo-f73623006-1280.webp 1280w" sizes="100vw" width="1280" height="848" alt="Filari di ulivi nell'erba alta con la luce del tramonto" fetchpriority="high" decoding="async" data-source="stand-in" data-subject="uliveto">
-    </picture>
-    <div class="wrap"><div class="hero-text">
-      <div class="hero__text">
-        <h1 id="hero-h">Olio nuovo dai colli pesaresi</h1>
-        <p class="hero__lead">L'olio d'oliva di Raffaele Bosco, raccolta 2026, dalle campagne interne pesaresi. Prezzo e formati su richiesta al +39 328 643 1359, anche su WhatsApp.</p>
+  <section class="hero hero--split" data-enter aria-labelledby="hero-h">
+    <div class="wrap"><div class="hero-text grid hero__grid">
+      <div class="hero__text span-5">
+        <h1 id="hero-h">Olio extravergine Peranzana della Daunia</h1>
+        <p class="hero__lead">L'olio EOS della raccolta 2026, estratto a freddo e filtrato, dalla Daunia del Gargano. Lo vende Raffaele Bosco: prezzi e formati al +39 328 643 1359, anche su WhatsApp.</p>
         <div class="btn-row">
           <a class="btn btn--primary" href="tel:+393286431359">Chiama per ordinare<svg class="m-arrow" viewBox="0 0 12 12" aria-hidden="true"><path class="m-arrow__stem" d="M1 6h8"/><path class="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5"/></svg></a>
           <a class="btn btn--secondary" href="https://wa.me/393286431359">Scrivi su WhatsApp</a>
         </div>
+      </div>
+      <div class="hero__media span-6 start-7">
+        <img src="assets/media/raccolta.webp" srcset="assets/media/raccolta-500.webp 500w, assets/media/raccolta.webp 899w" sizes="(max-width: 1023px) 100vw, 50vw" width="899" height="1599" alt="Raccolta delle olive: un uomo scuote i rami di un ulivo sopra le reti stese a terra" style="--ly-pos: 50% 40%" fetchpriority="high" data-source="client" data-subject="raccolta delle olive">
       </div>
     </div></div>
   </section>
@@ -143,60 +143,62 @@
   <section class="section" id="olio" aria-labelledby="olio-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="olio-h">Olio d'oliva della raccolta 2026. <span class="muted">Dalle olive delle campagne interne pesaresi.</span></h2>
+        <h2 id="olio-h">Olio extravergine EOS, monocultivar Peranzana. <span class="muted">Estratto a freddo e filtrato.</span></h2>
       </div>
       <div class="grid pics fill">
         <div class="frame frame--photo span-6">
-          <img class="frame__img" src="assets/img/photo-f9459372.webp" srcset="assets/img/photo-f9459372-500.webp 500w, assets/img/photo-f9459372-960.webp 960w, assets/img/photo-f9459372.webp 1280w" sizes="(max-width: 639px) 100vw, 50vw" width="1280" height="960" alt="Rami d'ulivo carichi di olive verdi contro il cielo azzurro" loading="lazy" decoding="async" data-source="stand-in" data-subject="olive sul ramo">
+          <img class="frame__img" src="assets/media/ramo.webp" srcset="assets/media/ramo-500.webp 500w, assets/media/ramo.webp 899w" sizes="(max-width: 639px) 100vw, 50vw" width="899" height="1599" alt="Ramo d'ulivo carico di olive Peranzana verdi e mature" style="object-position: 50% 45%" loading="lazy" decoding="async" data-source="client" data-subject="olive sul ramo">
         </div>
         <div class="frame frame--photo span-6">
-          <img class="frame__img" src="assets/img/photo-f3817080.webp" srcset="assets/img/photo-f3817080-500.webp 500w, assets/img/photo-f3817080-960.webp 960w, assets/img/photo-f3817080.webp 1280w" sizes="(max-width: 639px) 100vw, 50vw" width="1280" height="1730" alt="Ampolla di vetro piena d'olio dorato, chiusa col tappo di sughero" style="object-position: 50% 40%" loading="lazy" decoding="async" data-source="stand-in" data-subject="olio in ampolla">
+          <img class="frame__img" src="assets/media/bag-in-box.webp" srcset="assets/media/bag-in-box-500.webp 500w, assets/media/bag-in-box.webp 899w" sizes="(max-width: 639px) 100vw, 50vw" width="899" height="1599" alt="Confezioni bag in box di olio EOS con la grafica a piastrelle, impilate in magazzino" style="object-position: 50% 35%" loading="lazy" decoding="async" data-source="client" data-subject="bag in box EOS">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section ground-inverse" id="raccolta" aria-labelledby="raccolta-h">
+  <section class="section ground-inverse" id="frantoio" style="--hm: 2" aria-labelledby="frantoio-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="raccolta-h">Le olive delle campagne pesaresi</h2>
-        <p>Le olive vengono dagli uliveti dell'entroterra di Pesaro, raccolte nell'autunno 2026 e portate a spremere.</p>
+        <h2 id="frantoio-h">Dal frantoio, l'olio nuovo 2026</h2>
+        <p>Le olive Peranzana arrivano al frantoio, l'olio esce estratto a freddo e va in bottiglia dopo il filtraggio.</p>
       </div>
       <div class="grid pics fill">
-        <div class="frame frame--photo span-5">
-          <img class="frame__img" src="assets/img/photo-f7915537-960.webp" srcset="assets/img/photo-f7915537-500.webp 500w, assets/img/photo-f7915537-960.webp 960w" sizes="(max-width: 639px) 100vw, 40vw" width="960" height="722" alt="Cassette colorate piene di olive appena raccolte, sotto gli ulivi" loading="lazy" decoding="async" data-source="stand-in" data-subject="cassette di olive">
+        <div class="frame frame--photo span-4">
+          <video class="frame__img" src="assets/media/olive-nastro.mp4" poster="assets/media/olive-nastro.webp" controls loop muted playsinline preload="none" aria-label="Video: olive Peranzana con le foglie sul nastro del frantoio"></video>
         </div>
         <div class="frame frame--photo span-4">
-          <img class="frame__img" src="assets/img/photo-f43628259.webp" srcset="assets/img/photo-f43628259-500.webp 500w, assets/img/photo-f43628259-960.webp 960w, assets/img/photo-f43628259.webp 1280w" sizes="50vw" width="1280" height="962" alt="Olive verdi e scure appena raccolte, ancora con qualche foglia" loading="lazy" decoding="async" data-source="stand-in" data-subject="olive raccolte">
+          <video class="frame__img" src="assets/media/olio-estrazione.mp4" poster="assets/media/olio-estrazione.webp" controls loop muted playsinline preload="none" aria-label="Video: olio verde appena estratto che scende nella vasca d'acciaio"></video>
         </div>
-        <div class="frame frame--photo span-3">
-          <img class="frame__img" src="assets/img/photo-f11990686-960.webp" srcset="assets/img/photo-f11990686-500.webp 500w, assets/img/photo-f11990686-960.webp 960w" sizes="50vw" width="960" height="722" alt="Mani che pettinano un ramo d'ulivo con un rastrello per la raccolta" loading="lazy" decoding="async" data-source="stand-in" data-subject="raccolta a mano">
+        <div class="frame frame--photo span-4">
+          <video class="frame__img" src="assets/media/olio-bottiglia.mp4" poster="assets/media/olio-bottiglia.webp" controls muted playsinline preload="none" aria-label="Video: una bottiglia di vetro riempita d'olio direttamente dal frantoio"></video>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section statement" id="bosco" data-moment="word-highlight" aria-label="Il produttore">
+  <section class="section statement" id="bosco" data-moment="word-highlight" aria-label="Chi vende l'olio">
     <div class="wrap">
-      <p class="t-label">Il produttore</p>
-      <p class="mo-wh__text">Raffaele Bosco vende l'olio della sua raccolta a chi abita nelle campagne pesaresi e nei paesi vicini. Prezzo, formati e consegna si decidono con <strong>una telefonata</strong> o un messaggio.</p>
+      <p class="t-label">Chi vende l'olio</p>
+      <p class="mo-wh__text">Raffaele Bosco vende l'olio extravergine EOS a chi abita nelle campagne pesaresi e nei paesi vicini. Formato, prezzo e consegna si decidono con <strong>una telefonata</strong> o un messaggio.</p>
     </div>
   </section>
 
-  <section class="section" id="zona" aria-labelledby="zona-h">
+  <section class="section" id="formati" style="--hm: 2" aria-labelledby="formati-h">
     <div class="wrap">
       <div class="grid fill">
         <div class="span-5 split-col">
-          <h2 id="zona-h">L'olio a Pesaro e dintorni</h2>
-          <p class="t-lead">L'olio si vende nell'entroterra pesarese e nelle zone vicine. Chiama o scrivi per sapere dove e quando ritirarlo.</p>
+          <h2 id="formati-h">Formati e prezzi</h2>
+          <p class="t-lead">Lo stesso olio in quattro confezioni. Il prezzo lo chiedi a Raffaele, insieme a dove e quando ritirarlo.</p>
           <ul class="rows rows--spec split-col__end">
-            <li><span class="rows__name">Zona</span><span class="rows__value">Entroterra pesarese</span></li>
-            <li><span class="rows__name">Raccolta</span><span class="rows__value">2026</span></li>
-            <li><span class="rows__name">Prezzo e formati</span><span class="rows__value">Su richiesta</span></li>
+            <li><span class="rows__name">Bag in box</span><span class="rows__value">5 litri</span></li>
+            <li><span class="rows__name">Lattina</span><span class="rows__value">5 litri</span></li>
+            <li><span class="rows__name">Bottiglia in vetro</span><span class="rows__value">75 cl</span></li>
+            <li><span class="rows__name">Bottiglia in vetro</span><span class="rows__value">50 cl</span></li>
+            <li><span class="rows__name">Prezzo</span><span class="rows__value">Su richiesta</span></li>
           </ul>
         </div>
         <div class="frame frame--photo frame--fill span-6 start-7">
-          <img class="frame__img" src="assets/img/photo-f73810725-1400.webp" srcset="assets/img/photo-f73810725-500.webp 500w, assets/img/photo-f73810725-960.webp 960w, assets/img/photo-f73810725-1400.webp 1400w" sizes="(max-width: 1023px) 100vw, 82vw" width="1400" height="843" alt="Casolare in pietra tra colline arate, illuminato dall'alba" loading="lazy" decoding="async" data-source="stand-in" data-subject="colline marchigiane">
+          <video class="frame__img" src="assets/media/eos-video.mp4" poster="assets/media/eos-video.webp" controls playsinline preload="none" aria-label="Video di presentazione dell'olio EOS: la raccolta, il frantoio e i quattro formati"></video>
         </div>
       </div>
     </div>
@@ -215,15 +217,14 @@
       <div class="grid">
         <div class="span-6 stack-4">
           <a class="nav__logo footer__mark" href="#top"><img class="logo-img" src="assets/img/logo-bottiglia.png" alt="" width="142" height="160">Olio Bosco</a>
-          <p class="footer__lede">Olio d'oliva di Raffaele Bosco, dalle campagne interne pesaresi.</p>
+          <p class="footer__lede">Olio extravergine EOS della Daunia, venduto da Raffaele Bosco.</p>
         </div>
-        <div class="span-2 footer__col"><h3>L'olio</h3><ul><li><a href="#olio">Raccolta 2026</a></li><li><a href="#raccolta">Uliveti</a></li></ul></div>
-        <div class="span-2 footer__col"><h3>Zona</h3><ul><li><a href="#zona">Pesaro e dintorni</a></li><li><a href="#bosco">Il produttore</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>L'olio</h3><ul><li><a href="#olio">Olio EOS</a></li><li><a href="#frantoio">Il frantoio</a></li></ul></div>
+        <div class="span-2 footer__col"><h3>Acquisto</h3><ul><li><a href="#formati">Formati</a></li><li><a href="#bosco">Chi vende</a></li></ul></div>
         <div class="span-2 footer__col"><h3>Contatti</h3><ul><li><a href="tel:+393286431359">+39 328 643 1359</a></li><li><a href="https://wa.me/393286431359">WhatsApp</a></li></ul></div>
       </div>
       <div class="footer__legal">
         <span>&copy; 2026 Olio Bosco</span>
-        <a class="credits" href="credits.html">Fotografie da Wikimedia Commons</a>
       </div>
     </div>
   </div>
