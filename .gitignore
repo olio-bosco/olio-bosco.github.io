@@ -1,0 +1,25 @@
+# build-time files (taste-skill checks, screenshots)
+.taste-skill/
+shots/
+# kit folders the page does not load
+assets/*
+!assets/system.css
+!assets/system.js
+!assets/img/
+assets/img/credits.json
+!assets/ui/
+assets/ui/*
+!assets/ui/cards.css
+!assets/ui/ui.js
+!assets/motion/
+!assets/layout/
+assets/layout/*
+!assets/layout/layout.css
+!assets/layout/layout.js
+!assets/moments/
+assets/moments/*
+!assets/moments/moments.js
+!assets/moments/lib.js
+!assets/moments/word-highlight/
+assets/**/demo.html
+assets/motion/_hover-test.html
